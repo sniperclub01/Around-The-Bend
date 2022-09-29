@@ -8,6 +8,7 @@ enum STATE_FACING {
 }
 
 enum STATE_ACTION {
+	attacking,
 	walking,
 	idle,
 }

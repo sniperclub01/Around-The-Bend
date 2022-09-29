@@ -15,8 +15,8 @@
 			
 				var modifiedDir = (n*i) + dir;
 			
-				var xTarget = x + lengthdir_x(maxSpeed, modifiedDir);
-				var yTarget = y + lengthdir_y(maxSpeed, modifiedDir);
+				var xTarget = x + lengthdir_x(global.maxPlayerSpeed, modifiedDir);
+				var yTarget = y + lengthdir_y(global.maxPlayerSpeed, modifiedDir);
 			
 				if (place_free(xTarget, yTarget)) {
 					x = xTarget;
@@ -107,5 +107,11 @@ var spriteAction;
 	
 	if (sprite != noone) {
 		sprite_index = sprite;
+	}
+#endregion
+
+#region END STATE
+	if(global.currentPlayerHealth = 0) {
+		instance_destroy();
 	}
 #endregion
