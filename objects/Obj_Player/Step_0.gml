@@ -93,6 +93,38 @@ var spriteAction;
 			break;
 		}
 	#endregion
+	
+	#region WEAPON STATE
+		
+		aim_dir = point_direction(x, y, mouse_x, mouse_y);
+		player_weapon.image_angle = aim_dir;
+		
+		// Rotate the gun based on aiming direction
+		if ((aim_dir >= 90) && (aim_dir <= 270)) {
+			player_weapon.image_yscale=-1;
+		}
+		else {
+			player_weapon.image_yscale=1;	
+		}
+		
+		// Check for mouse input
+		if (mouse_check_button(mb_left)) {
+			if (can_fire) {
+				can_fire = false;
+				alarm[0] = fire_rate;
+				
+				var _dir = point_direction(x, y, mouse_x, mouse_y);
+				var _inst = instance_create_layer(x, y, "Bullets", Obj_Bullet);
+				with(_inst) {
+					speed = other.bullet_speed;	
+					direction = _dir;
+					image_angle = _dir;
+					owner_id = other;
+				}
+			}
+		}
+		
+	#endregion
 #endregion
 
 #region ANIMATION

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "init_player_health",
+  "name": "enemy_processes",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
