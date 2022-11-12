@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_Door_TempLeft",
+  "name": "Obj_DoorSpawn",
   "spriteId": {
-    "name": "Spr_Door_Temp",
-    "path": "sprites/Spr_Door_Temp/Spr_Door_Temp.yy",
+    "name": "Spr_PlayerSpawn",
+    "path": "sprites/Spr_PlayerSpawn/Spr_PlayerSpawn.yy",
   },
   "solid": false,
   "visible": true,

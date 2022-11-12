@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Obj_Door_Left",
   "spriteId": {
-    "name": "Spr_Door_Side",
-    "path": "sprites/Spr_Door_Side/Spr_Door_Side.yy",
+    "name": "Spr_Door_Left",
+    "path": "sprites/Spr_Door_Left/Spr_Door_Left.yy",
   },
   "solid": false,
   "visible": true,

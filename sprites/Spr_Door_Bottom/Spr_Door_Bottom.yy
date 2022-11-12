@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Spr_Door_Temp",
+  "name": "Spr_Door_Bottom",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Spr_Door_Temp",
+    "name": "Spr_Door_Bottom",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -44,7 +44,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"427a6eac-631a-4bed-9a47-09104b4260bd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11b7c80f-1609-4970-81db-3bc1504c608b","path":"sprites/Spr_Door_Temp/Spr_Door_Temp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0c41f181-7a2b-46b5-b785-b57dd3d87cfa","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11b7c80f-1609-4970-81db-3bc1504c608b","path":"sprites/Spr_Door_Bottom/Spr_Door_Bottom.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -67,7 +67,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Decor",
-    "path": "folders/Sprites/Decor.yy",
+    "name": "Doors",
+    "path": "folders/Sprites/Doors.yy",
   },
 }
