@@ -10,7 +10,7 @@ ds_grid_set(mapGrid, 12, 12, 1);
 var xCoord = 12;
 var yCoord = 12;
 
-for (var i = 0; i < 8; i++) {
+for (var i = 0; i < 1; i++) {
 	var choice = choose("left", "right", "up", "down");
 
 	if ((choice == "left") && (ds_grid_get(mapGrid, xCoord-1, yCoord) == 0)) {
@@ -21,12 +21,12 @@ for (var i = 0; i < 8; i++) {
 		xCoord++;
 		ds_grid_set(mapGrid, xCoord, yCoord, 1);
 	}
-	else if ((choice == "up") && (ds_grid_get(mapGrid,xCoord, yCoord+1) == 0)) {
-		yCoord++;
+	else if ((choice == "up") && (ds_grid_get(mapGrid,xCoord, yCoord-1) == 0)) {
+		yCoord--;
 		ds_grid_set(mapGrid, xCoord, yCoord, 1);
 	}
-	else if ((choice == "down") && (ds_grid_get(mapGrid,xCoord, yCoord-1) == 0)) {
-		yCoord--;
+	else if ((choice == "down") && (ds_grid_get(mapGrid,xCoord, yCoord+1) == 0)) {
+		yCoord++;
 		ds_grid_set(mapGrid, xCoord, yCoord, 1);
 	}
 	else {
@@ -45,13 +45,17 @@ alarm[0] = 3;
 
 
 // Debugging
-/*
+
 for(var i = 0; i < 25; i++) {
 	row = "";
 	for(var j = 0; j < 25; j++) {
-		row += string(ds_grid_get(mapGrid,i, j));
+		if (i == 12 && j == 12) {
+			row += "x"	
+		}
+		else {
+			row += string(ds_grid_get(mapGrid,i, j));
+		}
 	}
 	show_debug_message(row);
 	//show_debug_message("\n");
 }
-*/

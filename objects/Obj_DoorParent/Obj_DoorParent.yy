@@ -1,20 +1,14 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_Door_Left",
-  "spriteId": {
-    "name": "Spr_Door_Left",
-    "path": "sprites/Spr_Door_Left/Spr_Door_Left.yy",
-  },
+  "name": "Obj_DoorParent",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Obj_DoorParent",
-    "path": "objects/Obj_DoorParent/Obj_DoorParent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
