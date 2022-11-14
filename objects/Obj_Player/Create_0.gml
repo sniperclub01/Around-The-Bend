@@ -17,7 +17,7 @@ player_X = 12;
 player_Y = 12;
 
 roomGrid = ds_grid_create(25, 25);
-ds_grid_set(roomGrid, 12, 12, Room_Action);
+ds_grid_set(roomGrid, 12, 12, global.SpawnRoom);
 
 
 window_set_cursor(cr_none); // Get rid of default mouse

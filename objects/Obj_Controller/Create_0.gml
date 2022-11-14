@@ -1,6 +1,8 @@
 /// @description Create grid for room gen
 // You can write your code in this editor
 
+playerSpawn = "";
+
 randomise();
 
 mapGrid = ds_grid_create(25, 25);
@@ -53,9 +55,8 @@ for(var i = 0; i < 25; i++) {
 			row += "x"	
 		}
 		else {
-			row += string(ds_grid_get(mapGrid,i, j));
+			row += string(ds_grid_get(mapGrid,j, i));
 		}
 	}
 	show_debug_message(row);
-	//show_debug_message("\n");
 }

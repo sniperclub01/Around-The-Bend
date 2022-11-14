@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (other.sprite_index == Spr_Door_Left   ){ player_X--; playerSpawn = "right"}
-if (other.sprite_index == Spr_Door_Right  ){ player_X++; playerSpawn = "left"}
-if (other.sprite_index == Spr_Door_Top    ){ player_Y--; playerSpawn = "down"}
-if (other.sprite_index == Spr_Door_Bottom ){ player_Y++; playerSpawn = "up"}
+if (other.sprite_index == Spr_Door_Left   ){ player_X--; Obj_Controller.playerSpawn = "right"}
+if (other.sprite_index == Spr_Door_Right  ){ player_X++; Obj_Controller.playerSpawn = "left"}
+if (other.sprite_index == Spr_Door_Top    ){ player_Y--; Obj_Controller.playerSpawn = "down"}
+if (other.sprite_index == Spr_Door_Bottom ){ player_Y++; Obj_Controller.playerSpawn = "up"}
 
 
 // Map generation logic
@@ -80,4 +80,6 @@ else {
 	}
 }
 ds_grid_set(roomGrid, player_X, player_Y, newRoom);
+
+room_set_persistent(newRoom, true);
 room_goto(newRoom);

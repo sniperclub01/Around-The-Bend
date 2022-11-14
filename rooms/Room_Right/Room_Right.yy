@@ -18,7 +18,6 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Doors","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_794A480A","properties":[],"isDnd":false,"objectId":{"name":"Obj_Door_Right","path":"objects/Obj_Door_Right/Obj_Door_Right.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1312.0,"y":672.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D798D7E","properties":[],"isDnd":false,"objectId":{"name":"Obj_DoorSpawn","path":"objects/Obj_DoorSpawn/Obj_DoorSpawn.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":656.0,},
       ],"visible":true,"depth":-600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemy","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_79296F6F_2_1","properties":[],"isDnd":false,"objectId":{"name":"Obj_Enemy","path":"objects/Obj_Enemy/Obj_Enemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":640.0,},
@@ -289,7 +288,6 @@
     {"name":"inst_41FF215A","path":"rooms/Room_Right/Room_Right.yy",},
     {"name":"inst_EAAC874","path":"rooms/Room_Right/Room_Right.yy",},
     {"name":"inst_794A480A","path":"rooms/Room_Right/Room_Right.yy",},
-    {"name":"inst_7D798D7E","path":"rooms/Room_Right/Room_Right.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

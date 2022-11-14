@@ -18,7 +18,6 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Doors","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7C6345E2_1_1","properties":[],"isDnd":false,"objectId":{"name":"Obj_Door_Bottom","path":"objects/Obj_Door_Bottom/Obj_Door_Bottom.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":1312.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3A3F7799","properties":[],"isDnd":false,"objectId":{"name":"Obj_DoorSpawn","path":"objects/Obj_DoorSpawn/Obj_DoorSpawn.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":656.0,"y":1248.0,},
       ],"visible":true,"depth":-600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemy","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_79296F6F_2_1_1","properties":[],"isDnd":false,"objectId":{"name":"Obj_Enemy","path":"objects/Obj_Enemy/Obj_Enemy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":640.0,},
@@ -289,7 +288,6 @@
     {"name":"inst_36212AEF_1_1","path":"rooms/Room_Down/Room_Down.yy",},
     {"name":"inst_4368E6B9_1_1","path":"rooms/Room_Down/Room_Down.yy",},
     {"name":"inst_7C6345E2_1_1","path":"rooms/Room_Down/Room_Down.yy",},
-    {"name":"inst_3A3F7799","path":"rooms/Room_Down/Room_Down.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

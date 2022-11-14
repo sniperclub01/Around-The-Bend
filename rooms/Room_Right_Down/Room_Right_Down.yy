@@ -18,9 +18,7 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Doors","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3801A6AB","properties":[],"isDnd":false,"objectId":{"name":"Obj_Door_Bottom","path":"objects/Obj_Door_Bottom/Obj_Door_Bottom.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":1312.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4F0583A1","properties":[],"isDnd":false,"objectId":{"name":"Obj_DoorSpawn","path":"objects/Obj_DoorSpawn/Obj_DoorSpawn.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":656.0,"y":1248.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_40A1E735","properties":[],"isDnd":false,"objectId":{"name":"Obj_Door_Right","path":"objects/Obj_Door_Right/Obj_Door_Right.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1312.0,"y":672.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66CBA5AE","properties":[],"isDnd":false,"objectId":{"name":"Obj_DoorSpawn","path":"objects/Obj_DoorSpawn/Obj_DoorSpawn.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":656.0,},
       ],"visible":true,"depth":-600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemy","instances":[],"visible":true,"depth":-500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","instances":[],"visible":true,"depth":-400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
@@ -192,9 +190,7 @@
     {"name":"inst_717385DC_2_2_1_2_1","path":"rooms/Room_Right_Down/Room_Right_Down.yy",},
     {"name":"inst_46331386","path":"rooms/Room_Right_Down/Room_Right_Down.yy",},
     {"name":"inst_3801A6AB","path":"rooms/Room_Right_Down/Room_Right_Down.yy",},
-    {"name":"inst_4F0583A1","path":"rooms/Room_Right_Down/Room_Right_Down.yy",},
     {"name":"inst_40A1E735","path":"rooms/Room_Right_Down/Room_Right_Down.yy",},
-    {"name":"inst_66CBA5AE","path":"rooms/Room_Right_Down/Room_Right_Down.yy",},
     {"name":"inst_5E823335","path":"rooms/Room_Right_Down/Room_Right_Down.yy",},
   ],
   "inheritCreationOrder": false,
