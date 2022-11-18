@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_Enemy",
+  "name": "Obj_Basic_Enemy_4",
   "spriteId": {
-    "name": "Spr_EnemyIdle",
-    "path": "sprites/Spr_EnemyIdle/Spr_EnemyIdle.yy",
+    "name": "Spr_EnemyIdle_4",
+    "path": "sprites/Spr_EnemyIdle_4/Spr_EnemyIdle_4.yy",
   },
   "solid": false,
   "visible": true,
@@ -14,7 +14,10 @@
     "path": "sprites/Spr_PlayerIdle/Spr_PlayerIdle.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Obj_Enemy_Parent",
+    "path": "objects/Obj_Enemy_Parent/Obj_Enemy_Parent.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

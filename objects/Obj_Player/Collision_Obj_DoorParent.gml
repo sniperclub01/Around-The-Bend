@@ -12,6 +12,10 @@ up = false;
 down = false;
 left = false;
 right = false;
+upend = false;
+downend = false;
+rightend = false;
+leftend = false;
 
 if (ds_grid_get(Obj_Controller.mapGrid, player_X, player_Y-1) == 1) {
 	up = true;
@@ -24,6 +28,18 @@ if (ds_grid_get(Obj_Controller.mapGrid, player_X+1, player_Y) == 1) {
 }
 if (ds_grid_get(Obj_Controller.mapGrid, player_X-1, player_Y) == 1) {
 	left = true;
+}
+if (ds_grid_get(Obj_Controller.mapGrid, player_X, player_Y-1) == 2) {
+	upend = true;
+}
+if (ds_grid_get(Obj_Controller.mapGrid, player_X, player_Y+1) == 2) {
+	downend = true;
+}
+if (ds_grid_get(Obj_Controller.mapGrid, player_X+1, player_Y) == 2) {
+	rightend = true;
+}
+if (ds_grid_get(Obj_Controller.mapGrid, player_X-1, player_Y) == 2) {
+	leftend = true;
 }
 
 
@@ -77,6 +93,53 @@ else {
 	}
 	if (down && left && right && up) { // door 4-way
 		newRoom = room_duplicate(Room_4Way);
+	}
+	
+	// End room handling
+		if (rightend && !leftend && !downend && !upend) { // door right
+		newRoom = room_duplicate(Room_End_Right);
+	}
+	if (rightend && leftend && !downend && !upend) { // door right, left
+		newRoom = room_duplicate(Room_End_Right_Left);
+	}
+	if (rightend && !leftend && downend && !upend) { // door right, down
+		newRoom = room_duplicate(Room_End_Right_Down);
+	}
+	if (rightend && leftend && downend && !upend) { // door right, left, down
+		newRoom = room_duplicate(Room_End_3NoUp);
+	}
+	if (leftend && !rightend && !downend && !upend) { // door left
+		newRoom = room_duplicate(Room_End_Left);
+	}
+	if (leftend && !rightend && downend && !upend) { // door left, down
+		newRoom = room_duplicate(Room_End_Left_Down);
+	}
+	if (leftend && !rightend && downend && upend) { // door left, down, up
+		newRoom = room_duplicate(Room_End_3NoRight);
+	}
+	if (upend && !leftend && !rightend && !downend) { // door up
+		newRoom = room_duplicate(Room_End_Up);
+	}
+	if (upend && !leftend && !rightend && downend) { // door up, down
+		newRoom = room_duplicate(Room_End_Up_Down);
+	}
+	if (upend && leftend && !rightend && !downend) { // door up, left
+		newRoom = room_duplicate(Room_End_Up_Left);
+	}
+	if (upend && !leftend && rightend && !downend) { // door up, right
+		newRoom = room_duplicate(Room_End_Up_Right);
+	}
+	if (upend && leftend && rightend && !downend) { // door up, left, right
+		newRoom = room_duplicate(Room_End_3NoDown);
+	}
+	if (downend && !leftend && !rightend && !upend) { // door down
+		newRoom = room_duplicate(Room_End_Down);
+	}
+	if (downend && leftend && rightend && !upend) { // door down, left, right
+		newRoom = room_duplicate(Room_End_3NoUp);
+	}
+	if (downend && leftend && rightend && upend) { // door 4-way
+		newRoom = room_duplicate(Room_End_4Way);
 	}
 }
 ds_grid_set(roomGrid, player_X, player_Y, newRoom);

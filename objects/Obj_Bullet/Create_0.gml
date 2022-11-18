@@ -4,7 +4,7 @@
 damage = global.playerDamage;
 range = global.playerRange;
 owner_id = noone;
-knockback_time = 5;
+knockback_time = 4;
 
 function bullet_die() {
 	speed = 0;

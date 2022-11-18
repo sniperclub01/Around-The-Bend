@@ -1,4 +1,4 @@
-init_player(3, 3, 1, 240, 18); // initialize health, speed, damage, range, fire rate. (so it can eventually be character based)
+init_player(3, 3, 1, 480, 18); // initialize health, speed, damage, range, fire rate. (so it can eventually be character based)
 
 // Initialize states
 state_facing = STATE_FACING.right;
@@ -11,6 +11,8 @@ fire_rate = global.playerFireRate;
 can_fire = true;
 bullet_speed = 4;
 
+// Floor handling
+playerFloor = 1;
 
 // Map Generation Logic
 player_X = 12;

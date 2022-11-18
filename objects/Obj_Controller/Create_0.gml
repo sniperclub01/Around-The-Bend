@@ -12,7 +12,7 @@ ds_grid_set(mapGrid, 12, 12, 1);
 var xCoord = 12;
 var yCoord = 12;
 
-for (var i = 0; i < 1; i++) {
+for (var i = 0; i < 8; i++) {
 	var choice = choose("left", "right", "up", "down");
 
 	if ((choice == "left") && (ds_grid_get(mapGrid, xCoord-1, yCoord) == 0)) {
