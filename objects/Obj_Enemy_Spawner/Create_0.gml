@@ -1,20 +1,5 @@
-/// @description Insert description here
+/// @description Decide what enemy to place
 // You can write your code in this editor
-
-/*randomize();
-
-var choice = choose("Basic", "BasicMoreHP");
-	
-if (choice = "Basic") {
-	instance_create_layer(x, y, "Enemy", Obj_Basic_Enemy);
-}
-else if (choice = "BasicMoreHP") {
-	instance_create_layer(x, y, "Enemy", Obj_Basic_Enemy_2);
-}
-else if (choice = "Advanced") {
-	
-}
-instance_destroy();*/
 
 //create event declaring weights.  0 - 3 could be your rarity values
 weight[0] = 70;  //common
@@ -26,8 +11,7 @@ for (var i = 0; i < array_length(weight); ++i) {
     weight_total += weight[i];
 }
 
-//when you want to choose something run this.
-//get a random integer from 1 to the weight total, ensuring we don't include 0. I'm using ints, but you can use reals
+//get a random integer from 1 to the weight total, ensuring we don't include 0. Using ints, but  can use reals
 var _num = irandom_range(1, weight_total);
 var _sum = 0;
 var _size = array_length(weight);

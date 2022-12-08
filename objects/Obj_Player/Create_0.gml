@@ -1,4 +1,5 @@
-init_player(3, 3, 1, 480, 18); // initialize health, speed, damage, range, fire rate. (so it can eventually be character based)
+init_player(3, 2, 1, 360, 40, 5); 
+// initialize health, speed, damage, range, fire rate, knockback time. 
 
 // Initialize states
 state_facing = STATE_FACING.right;
@@ -18,9 +19,22 @@ playerFloor = 1;
 player_X = 12;
 player_Y = 12;
 
-roomGrid = ds_grid_create(25, 25);
-ds_grid_set(roomGrid, 12, 12, global.SpawnRoom);
+// Invincibility frames
+invincible = false;
+hit = false;
+
+//Obj_Controller.roomGrid = ds_grid_create(25, 25);
+//ds_grid_set(Obj_Controller.roomGrid, 12, 12, global.SpawnRoom);
 
 
 window_set_cursor(cr_none); // Get rid of default mouse
 cursor_sprite = Spr_Crosshair; // Set it to our crosshair
+
+#region CAMERA VARIABLES
+
+min_view_x = 0;
+min_view_y = 0;
+max_view_x = 0;
+max_view_y = 0;
+
+#endregion

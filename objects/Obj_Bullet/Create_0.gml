@@ -3,8 +3,8 @@
 
 damage = global.playerDamage;
 range = global.playerRange;
-owner_id = noone;
-knockback_time = 4;
+owner_id = Obj_Player;
+knockback_time = global.knockBackTime;
 
 function bullet_die() {
 	speed = 0;

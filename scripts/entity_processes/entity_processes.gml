@@ -11,14 +11,14 @@ function damage_entity(_tid, _sid, _damage, _time) {
 		path_end();
 		
 		// set knockback distance
-		var _dis = 2;
+		var _dis = 3;
 		var _dir = point_direction(_sid.x, _sid.y, x, y);
 		hsp += lengthdir_x(_dis, _dir);
 		vsp += lengthdir_y(_dis, _dir);
-		/*calc_path_delay = _time;
+		calc_path_delay = _time;
 		alert = true;
 		knockback_time = _time;
-		return _dead;*/
+		//return _dead;
 	}
 }
 

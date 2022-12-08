@@ -18,6 +18,6 @@ attack_dis = -1;
 path = path_add();
 
 // delay for path calculations (eases up cpu use)
-calc_path_delay = 45;
+calc_path_delay = 5;
 
 calc_path_timer = irandom(60);

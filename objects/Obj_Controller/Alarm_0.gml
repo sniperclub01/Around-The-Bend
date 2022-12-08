@@ -53,6 +53,9 @@ if (up && left && !right && !down) { // door up, left
 if (up && !left && right && !down) { // door up, right
 	global.SpawnRoom = room_duplicate(Room_Spawn_Up_Right);
 }
+if (up && !left && right && down) { // door up, right, down
+	global.SpawnRoom = room_duplicate(Room_Spawn_NoLeft);
+}
 if (up && left && right && !down) { // door up, left, right
 	global.SpawnRoom = room_duplicate(Room_Spawn_NoDown);
 }
@@ -68,3 +71,7 @@ if (down && left && right && up) { // door 4-way
 
 room_set_persistent(global.SpawnRoom, true);
 room_goto(global.SpawnRoom);
+if (!instance_exists(Obj_Player)) {
+	instance_create_layer(480, 480, "Instances", Obj_Player);	
+}
+ds_grid_set(roomGrid, 12, 12, global.SpawnRoom);

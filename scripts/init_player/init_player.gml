@@ -7,4 +7,5 @@ global.maxPlayerSpeed = argument1;
 global.playerDamage = argument2;
 global.playerRange = argument3
 global.playerFireRate = argument4;
+global.knockBackTime = argument5;
 }

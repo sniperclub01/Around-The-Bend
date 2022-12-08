@@ -39,7 +39,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Entity/Enemy.yy",
+    "name": "Objects",
+    "path": "folders/Entity/Enemy/Objects.yy",
   },
 }

@@ -1,5 +1,10 @@
 /// @description Create grid for room gen
 // You can write your code in this editor
+//global.gamePaused = false;
+
+// Player room handling
+newRoom = Room_Start;
+roomGrid = ds_grid_create(25, 25);
 
 playerSpawn = "";
 

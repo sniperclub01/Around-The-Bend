@@ -2,35 +2,83 @@
 // You can write your code in this editor
 
 #region MOVEMENT
-	var xdir = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-	var ydir = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
-	if (xdir != 0 or ydir != 0) {
+var xdir = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+var ydir = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+
+if (xdir != 0 or ydir != 0) {
 	
-		var dir = point_direction(0, 0, xdir, ydir);
+	var dir = point_direction(0, 0, xdir, ydir);
 	
-		var movedSuccessfully = false;
-		for (var i = 0; i <= 80; i += 10) {
-			for (var n = -1; n <= 1; n += 2) {
+	//var movedSuccessfully = false;
+	for (var i = 0; i <= 80; i += 10) {
+		for (var n = -1; n <= 1; n += 2) {
 			
-				var modifiedDir = (n*i) + dir;
+			var modifiedDir = (n*i) + dir;
 			
-				var xTarget = x + lengthdir_x(global.maxPlayerSpeed, modifiedDir);
-				var yTarget = y + lengthdir_y(global.maxPlayerSpeed, modifiedDir);
+			var xTarget = x + lengthdir_x(global.maxPlayerSpeed, modifiedDir);
+			var yTarget = y + lengthdir_y(global.maxPlayerSpeed, modifiedDir);
 			
-				if (place_free(xTarget, yTarget)) {
-					x = xTarget;
-					y = yTarget;
-					movedSucessfully = true;
-					break;
-				}
-			}
-		
-			if (movedSucessfully) {
+						
+			/*if (place_free(xTarget, yTarget)) {
+				x = xTarget;
+				y = yTarget;
+				movedSucessfully = true;
 				break;
+			}*/
+			if (place_free(xTarget, y)) {
+				x = xTarget;
+				//y = yTarget;
+				movedSucessfully = true;
+				//break;
+			}
+			if (place_free(x, yTarget)) {
+				//x = xTarget;
+				y = yTarget;
+				movedSucessfully = true;
+				//break;
 			}
 		}
+		
+		if (movedSucessfully) {
+			break;
+		}
 	}
+}
+#endregion
+
+#region ITEMHANDLING
+// Health
+while (place_meeting(x, y, Obj_Health)) {
+	with(instance_place(x, y, Obj_Health)) {
+		if (global.currentPlayerHealth < global.maxPlayerHealth) {
+			global.currentPlayerHealth += 1;
+			instance_destroy();
+		}
+		else {
+			return;
+		}
+	}
+}
+// Health up
+while (place_meeting(x, y, Obj_HealthUp)) {
+	with(instance_place(x, y, Obj_HealthUp)) {
+		if (global.maxPlayerHealth < 10) {
+			instance_destroy();
+			global.maxPlayerHealth += 1;
+		}
+		else {
+			return;
+		}
+	}
+}
+// Damage up
+while (place_meeting(x, y, Obj_Item_Damage_Up)) {
+	with(instance_place(x, y, Obj_Item_Damage_Up)) {
+		global.playerDamage += 1;
+		instance_destroy();
+	}
+}
 #endregion
 
 
@@ -39,24 +87,24 @@ var spriteFacing = "";
 var spriteAction;
 #region STATE MACHINE
 
-	if (isMoving) {
-		#region FACING STATE DECISION
-			switch(dir) {
-				case 90:
-					state_facing = STATE_FACING.up;
-				break;
-				case 270:
-					state_facing = STATE_FACING.down;
-				break;
-				case 180:
-					state_facing = STATE_FACING.left;
-				break;
-				case 0:
-					state_facing = STATE_FACING.right;
-				break;
-			}
-		#endregion
-	}
+if (isMoving) {
+	#region FACING STATE DECISION
+		switch(dir) {
+			case 90:
+				state_facing = STATE_FACING.up;
+			break;
+			case 270:
+				state_facing = STATE_FACING.down;
+			break;
+			case 180:
+				state_facing = STATE_FACING.left;
+			break;
+			case 0:
+				state_facing = STATE_FACING.right;
+			break;
+		}
+	#endregion
+}
 	
 	#region FACING STATE
 		switch(state_facing) {
@@ -143,7 +191,8 @@ var spriteAction;
 #endregion
 
 #region END STATE
-	if(global.currentPlayerHealth = 0) {
+	if(global.currentPlayerHealth <= 0) {
+		instance_create_layer(0, 0, "UI", Obj_EndScreen);
 		instance_destroy();
 	}
 #endregion
