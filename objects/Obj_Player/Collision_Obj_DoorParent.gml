@@ -94,9 +94,9 @@ else{
 	else if (downend && leftend && rightend && !upend) { // door down, left, right
 		Obj_Controller.newRoom = room_duplicate(Room_End_3NoUp);
 	}
-	else if (downend && leftend && rightend && upend) { // door 4-way
+	/*else if (downend && leftend && rightend && upend) { // door 4-way
 		Obj_Controller.newRoom = room_duplicate(Room_End_4Way);
-	}
+	}*/
 	
 	// Normal door handling
 	else {

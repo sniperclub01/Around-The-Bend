@@ -72,6 +72,7 @@ if (down && left && right && up) { // door 4-way
 room_set_persistent(global.SpawnRoom, true);
 room_goto(global.SpawnRoom);
 if (!instance_exists(Obj_Player)) {
-	instance_create_layer(480, 480, "Instances", Obj_Player);	
+	instance_create_layer(480, 480, "Instances", Obj_Player);
+	instance_create_layer(0, 0, "Instances", Obj_Music);
 }
 ds_grid_set(roomGrid, 12, 12, global.SpawnRoom);
