@@ -73,6 +73,15 @@ room_set_persistent(global.SpawnRoom, true);
 room_goto(global.SpawnRoom);
 if (!instance_exists(Obj_Player)) {
 	instance_create_layer(480, 480, "Instances", Obj_Player);
+}
+if (!instance_exists(Obj_Music)) {
 	instance_create_layer(0, 0, "Instances", Obj_Music);
 }
+if (!instance_exists(Obj_Camera)) {
+	instance_create_layer(0, 0, "Instances", Obj_Camera);
+}
+if (!instance_exists(P_ParticleSystem)) {
+	instance_create_layer(0, 0, "Instances", P_ParticleSystem);
+}
+
 ds_grid_set(roomGrid, 12, 12, global.SpawnRoom);

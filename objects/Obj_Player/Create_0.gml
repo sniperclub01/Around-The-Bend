@@ -1,4 +1,4 @@
-init_player(3, 2, 1, 360, 40, 5); 
+init_player(3, 5, 1, 360, 40, 5); 
 // initialize health, speed, damage, range, fire rate, knockback time. 
 
 // Initialize states
