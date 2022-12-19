@@ -46,13 +46,7 @@ for (var i = 0; i < 8; i++) {
 
 alarm[0] = 3;
 
-
-
-
-
-
 // Debugging
-
 for(var i = 0; i < 25; i++) {
 	row = "";
 	for(var j = 0; j < 25; j++) {

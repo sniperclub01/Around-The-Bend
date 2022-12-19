@@ -192,7 +192,7 @@ if (isMoving) {
 
 #region END STATE
 	if(global.currentPlayerHealth <= 0) {
-		instance_create_layer(0, 0, "UI", Obj_EndScreen);
+		instance_create_layer(0, 0, "Instances", Obj_EndScreen);
 		instance_destroy();
 	}
 #endregion

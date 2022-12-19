@@ -16,7 +16,7 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":{"name":"Floor1_Walls","path":"tilesets/Floor1_Walls/Floor1_Walls.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":30,"SerialiseHeight":30,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","tilesetId":null,"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":30,"SerialiseHeight":30,"TileCompressedData":[
 -31,6,1,19,-18,1,2,20,21,-8,1,2,6,5,-28,14,2,6,5,-28,14,2,6,5,-28,14,2,6,5,-28,
 14,2,6,5,-28,14,2,6,5,-28,14,2,6,5,-28,14,2,6,5,-28,14,2,6,5,-28,14,2,6,5,-28,
 14,2,6,5,-28,14,2,6,5,-28,14,2,6,5,-28,14,2,6,5,-28,14,2,6,5,-28,14,2,6,5,-28,

@@ -1,4 +1,6 @@
-init_player(3, 5, 1, 360, 40, 5); 
+//init_player(Obj_PlayerStats.playerHP, Obj_PlayerStats.playerSpeed, Obj_PlayerStats.playerDamage, 
+		//Obj_PlayerStats.playerRange, Obj_PlayerStats.playerFireRate, Obj_PlayerStats.knockBackTime); 
+
 // initialize health, speed, damage, range, fire rate, knockback time. 
 
 // Initialize states
@@ -21,7 +23,7 @@ player_Y = 12;
 
 // Invincibility frames
 invincible = false;
-hit = false;
+//hit = false;
 
 //Obj_Controller.roomGrid = ds_grid_create(25, 25);
 //ds_grid_set(Obj_Controller.roomGrid, 12, 12, global.SpawnRoom);

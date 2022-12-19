@@ -3,13 +3,14 @@
 
 
 	//audio_play_sound(Song_Whole, 10, true);	
-if (Obj_Player.playerFloor == 1) {
+if (Obj_PlayerStats.playerFloor == 1) {
 	audio_play_sound(Song_Loop2, 10, true);	
 }
-if (Obj_Player.playerFloor == 2) {
-	audio_play_sound(Song_Loop3, 10, false);
+else if (Obj_PlayerStats.playerFloor == 2) {
+	audio_play_sound(Song_Loop3, 10, true);
+	//audio_play_sound(Song_Whole, 10, true);	
+}
+else {
 	audio_play_sound(Song_Whole, 10, true);	
 }
-if (Obj_Player.playerFloor == 3) {
-	audio_play_sound(Song_Loop4, 10, true);	
-}
+

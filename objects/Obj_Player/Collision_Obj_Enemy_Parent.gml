@@ -18,4 +18,4 @@ if (playerFloor > 1) {
 }
 
 invincible = true;
-alarm_set(1, 20);
+alarm_set(1, 10);
