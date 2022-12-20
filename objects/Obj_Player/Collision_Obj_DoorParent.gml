@@ -5,16 +5,11 @@ if (other.sprite_index == Spr_Door_Right  ){ player_X++; Obj_Controller.playerSp
 if (other.sprite_index == Spr_Door_Top    ){ player_Y--; Obj_Controller.playerSpawn = "down"}
 if (other.sprite_index == Spr_Door_Bottom ){ player_Y++; Obj_Controller.playerSpawn = "up"}
 
-
 // Map generation logic
 up = false;
 down = false;
 left = false;
 right = false;
-upend = false;
-downend = false;
-rightend = false;
-leftend = false;
 
 if (ds_grid_get(Obj_Controller.mapGrid, player_X, player_Y-1) == 1) {
 	up = true;

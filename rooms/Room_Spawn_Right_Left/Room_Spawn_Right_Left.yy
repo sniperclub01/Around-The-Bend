@@ -21,7 +21,8 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"BloodyStuff","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_620FE07F_2_1_1_1_1_1_1","properties":[],"isDnd":false,"objectId":{"name":"Obj_BloodDraining","path":"objects/Obj_BloodDraining/Obj_BloodDraining.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.6666666,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":352.0,"y":16.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7ADD1C0C_2_1_1_1_1_1_1","properties":[],"isDnd":false,"objectId":{"name":"Obj_BloodDraining","path":"objects/Obj_BloodDraining/Obj_BloodDraining.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.6666666,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":576.0,"y":16.0,},
-      ],"visible":false,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66046B50","properties":[],"isDnd":false,"objectId":{"name":"Obj_Pentagram1","path":"objects/Obj_Pentagram1/Obj_Pentagram1.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":432.0,"y":408.0,},
+      ],"visible":false,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":24,"gridY":24,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemy","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1643339_3_1_1_1_2_8_1_1_1_1_1_1","properties":[],"isDnd":false,"objectId":{"name":"Obj_Pathing","path":"objects/Obj_Pathing/Obj_Pathing.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":64.0,},
       ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":64,"gridY":64,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
@@ -182,6 +183,7 @@
     {"name":"inst_7ADD1C0C_2_1_1_1_1_1_1","path":"rooms/Room_Spawn_Right_Left/Room_Spawn_Right_Left.yy",},
     {"name":"inst_674C2A66","path":"rooms/Room_Spawn_Right_Left/Room_Spawn_Right_Left.yy",},
     {"name":"inst_265726AB","path":"rooms/Room_Spawn_Right_Left/Room_Spawn_Right_Left.yy",},
+    {"name":"inst_66046B50","path":"rooms/Room_Spawn_Right_Left/Room_Spawn_Right_Left.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
