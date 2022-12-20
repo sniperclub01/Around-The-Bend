@@ -73,7 +73,7 @@ if (!instance_exists(Obj_PlayerStats)) {
 	instance_create_layer(0, 0, "Instances", Obj_PlayerStats);
 }
 if (Obj_PlayerStats.playerFloor = 2) {
-	instance_create_layer(0, 0, "Shaders", Obj_ApplyShader);
+	instance_create_depth(0, 0, 100, Obj_ApplyShader);
 	Obj_ApplyShader.dizzyTimer = 480;
 	if audio_is_playing(Song_Loop2) {
 		audio_stop_all();

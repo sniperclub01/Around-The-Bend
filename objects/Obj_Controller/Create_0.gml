@@ -45,7 +45,7 @@ for (var i = 0; i < 8; i++) {
 }
 
 
-alarm[0] = 3;
+alarm[0] = 1;
 
 // Debugging
 for(var i = 0; i < 25; i++) {
