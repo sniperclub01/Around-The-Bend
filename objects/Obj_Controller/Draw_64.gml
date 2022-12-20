@@ -1,6 +1,6 @@
 /// @description Insert description here
 
-display_set_gui_size(1920, 1080);
+//display_set_gui_size(1920, 1080);
 if (instance_exists(Obj_Player)) {
 	var _playerDamage = global.playerDamage;
 	var _currentPlayerHealth = global.currentPlayerHealth;
@@ -17,9 +17,9 @@ if (instance_exists(Obj_Player)) {
 			//_imageIndex += (_playerFracHealth > .25);
 			_imageIndex += (_playerFracHealth > .5);
 		}
-		draw_sprite(Spr_PlayerHealth, _imageIndex, + (i*32), 16);
+		draw_sprite(Spr_PlayerHealth, _imageIndex, -64 + (i*128), 16);
 	}
 	for (var i = 1; i <= _playerDamage; i++) {
-		draw_sprite(Spr_PlayerDamage, 0, (i * 32), 48);
+		draw_sprite(Spr_PlayerDamage, 0, -64 + (i * 128), 132);
 	}
 }

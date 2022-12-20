@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-playerFloor = 1;
+playerFloor = 2;
 
 playerHP = 3;
 playerSpeed = 5;

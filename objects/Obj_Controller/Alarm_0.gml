@@ -69,15 +69,12 @@ if (down && left && right && up) { // door 4-way
 	global.SpawnRoom = room_duplicate(Room_Spawn_4Way);
 }
 
-room_set_persistent(global.SpawnRoom, true);
-room_goto(global.SpawnRoom);
-
 if (!instance_exists(Obj_PlayerStats)) {
 	instance_create_layer(0, 0, "Instances", Obj_PlayerStats);
 }
 if (Obj_PlayerStats.playerFloor = 2) {
-	instance_create_layer(0, 0, "Instances", Obj_ApplyShader);
-	Obj_ApplyShader.dizzyTimer = 240;
+	instance_create_layer(0, 0, "Shaders", Obj_ApplyShader);
+	Obj_ApplyShader.dizzyTimer = 480;
 	if audio_is_playing(Song_Loop2) {
 		audio_stop_all();
 		instance_destroy(Obj_Music);
@@ -102,5 +99,15 @@ if (!instance_exists(P_ParticleSystem)) {
 	instance_create_layer(0, 0, "Instances", P_ParticleSystem);
 }
 
+if (Obj_PlayerStats.playerFloor == 4) {
+	global.SpawnRoom = room_duplicate(Room_End);
+	if (instance_exists(Obj_Player)) {
+		Obj_Player.x = 480;
+		Obj_Player.y = 480;
+	}
+}
+
+room_set_persistent(global.SpawnRoom, true);
+room_goto(global.SpawnRoom);
 
 ds_grid_set(roomGrid, 12, 12, global.SpawnRoom);

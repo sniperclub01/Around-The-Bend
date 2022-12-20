@@ -6,7 +6,7 @@ varying vec4 v_vColour;
 
 uniform float time;
 
-const float speed = 0.003;
+const float speed = 0.001;
 const float xFreq = 10.0;
 const float xSize = 0.01;
 
